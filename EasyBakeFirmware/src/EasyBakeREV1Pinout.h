@@ -11,29 +11,26 @@ namespace Digitl {
 		const int ESTOP_PIN = INT2;
 	}
 	namespace SensingPins {
-		const int SW_PIN = INT6;
+		const int CURR_SENSE_PIN = INT6;
 	}
 	namespace IndictorsPins {
-		const int COOL_PIN = 11;
-		const int STATUS_PIN = 12;
-		const int ERROR_PIN = A0;
-		const int ACT_PIN = A1;
-		const int HEAT_PIN = A2;
+		const int IND_LE_PIN = 12;
+		const int IND_OE_PIN = 11;
 	}
 	namespace DisplayPins {
 		const int BACKLIGHT_PIN = 9;
-		const int RESET_PIN = 13;
+		const int DISP_A0_PIN = 10;
+		const int DISP_RESET_PIN = 13;
 	}
 	namespace IOPins
 	{
 		const int IO_PIN = INT3;
 	} // namespace IOPins
-	
 }
 namespace Anlg {
 	namespace SensingPins {
-		const int PEAK_PIN = A4;
-		const int CURRENT_PIN = A5;
+		const int PEAK_PIN = A0;
+		const int CURRENT_PIN = A1;
 	}
 }
 namespace Ser {
@@ -42,9 +39,9 @@ namespace Ser {
 		const int MISO = 14;
 		const int MOSI = 16;
 
-		const int Display_ADDR = 5;
-		const int IO_ADDR = 4;
-		const int THERM_ADDR = A3;
+		const int DISP_CS = 5;
+		const int IO_CS = 4;
+		const int THERM_CS = 2;
 	}
 }
 
