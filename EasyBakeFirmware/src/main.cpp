@@ -3,8 +3,20 @@
 #include "EasyBakeREV1Pinout.h"
 #include "Adafruit_I2CDevice.h"
 #include "Adafruit_MAX31855.h"
+#include "STP16Driver.h"
+#include "NHD_Display.h"
+#include "Display.h"
 
+#pragma region Object Init
 Adafruit_MAX31855 tempDriver = Adafruit_MAX31855(Ser::SPI::SCK, Ser::SPI::THERM_CS, Ser::SPI::MISO);
+// STP16Driver indicators = STP16Driver();
+NHD_Display nhddisp = NHD_Display();
+Display *display = &nhddisp;
+#pragma endregion
+
+#pragma region Local Variables
+
+#pragma endregion
 
 void InitPins()
 {
