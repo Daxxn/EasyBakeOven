@@ -578,7 +578,13 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/USBIN+": "USB",
+      "/USBIN-": "USB",
+      "VBUS": "PWR",
+      "VCC": "PWR",
+      "VDD": "PWR"
+    },
     "netclass_patterns": [
       {
         "netclass": "PWR",
